@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galentine 💖</title>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(#ffb3c6, #ffe5ec);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    background: white;
+    width: 90%;
+    max-width: 350px;
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+
+  h1 {
+    color: #b30059;
+    font-size: 22px;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  .yes {
+    background: #ff4d88;
+    color: white;
+  }
+
+  .yes2 {
+    background: #ff85a1;
+    color: white;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 15px;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="card" id="invite">
+  <h4>Machan… will you be my HB-alentine? 💐❤️</h4>
+  <button class="yes" onclick="accepted()">YESSS 😋</</button>
+  <button class="yes2" onclick="accepted()">Obviously YESS 😉</button>
+</div>
+
+<script>
+function accepted() {
+  document.getElementById("invite").innerHTML = `
+    <h1>HB-alentine Confirmed 😭❤️✨</h1>
+    <p>Hehe🌝You’re stuck with me now 😌</p>
+    <img src="https://i.postimg.cc/4xk4SBx4/5cd99b03ae303ed9872b1c7ead6b7442.jpg" alt="Meme">
+  `;
+}
+</script>
+
+</body>
+</html>
